@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    tools:context="com.example.thezoo3.SecondActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:layout_above="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="613dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.80"
+            android:contentDescription="Main background pic"
+            android:src="@drawable/zoo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/previous_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="117dp"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/left_arrow"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/Button.Green" />
+
+
+        <Button
+            android:id="@+id/info_button"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="More Information"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#4E5254"
+            android:textColorHint="#FFEB3B"
+            android:theme="@color/colorPrimary"
+            tools:text="More Information" />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="116dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/right_arrow"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/Button.Green" />
+    </LinearLayout>
+</RelativeLayout>
